@@ -1,57 +1,18 @@
-:root {
-    --black-text: #000000;
-    --white: #FFFFFF;
-    --white-text-op60: rgb(255, 255, 255, 0.6);
-    --light-grey-stroke: #ECECEC;
-    --grey-white-stroke: #EEEEEE;
-    --grey-text: #757575;
-    --dark-graphite-text: #212121;
-    --blue: #2196F3;
-    --graphite-bg: #2F303A;
-    --light-grey-bg-team: #F5F4FA;
-    --light-grey-icons: #AFB1B8;
-    --white-text-op10:  rgb(255, 255, 255, 0.1);
-    --transition-time: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+@import './base/normalize';
+@import './utils/variables';
+@import './base/defaults';
 
-body {
-    font-family: 'Roboto', sans-serif;
-}
 
-.container {
-    width: 1200px;
-    padding: 15px 15px;
-    margin: 0 auto;
-    /* outline: 1px solid #FF6C00; */
-}
 
-header {
-    background-color: var(--white);
-    color: var(--dark-graphite-text);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    border-bottom: 1px solid var(--light-grey-stroke);
-}
-
-.header-nav,
-.header-nav-links,
-.header-address {
-    display: flex;
-}
-
-img {
-    display: block;
-}
 /* /* .header a {
-    /* color: white; */
+    /* color: white-color; */
     /* color: inherit; */
     /* color: currentColor; */
-    /* color: var(--white-text);
+    /* color: $white-text;
 /* }  */
 
 /* .hero {
-    background:cadetblue;
+    background:cadetblue-color;
 }
 .hero-btn {
     background-color: coral;
@@ -92,23 +53,23 @@ img {
 
 .header-address a {
     display: flex;
-    color: var(--grey-text);
+    color: $grey-text;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
 
-    transition: color var(--transition-time);
+    transition: color $transition-time;
 }
 
 
 .header-address a:hover,
 .header-address a:focus {
-    color: var(--blue);
+    color: $blue-color;
 }
 
 .title {
-    color: var(--dark-graphite-text);
+    color: $dark-graphite-text;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -117,30 +78,30 @@ img {
 }
 
 .link-header {
-    color: var(--black-text);
+    color: $black-text;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
     position:relative;
 
-    transition: color var(--transition-time);
+    transition: color $transition-time;
 }
 
 .link-header:hover,
 .link-header:focus {
-    color: var(--blue);
+    color: $blue-color;
 }
 
 .link-header.current {
-    color: var(--blue);
+    color: $blue-color;
 }
 
 .link-header.current::after {
     content:"";
     position:absolute;
     display:block;
-    background-color: var(--blue);
+    background-color: $blue-color;
     width: 100%;
     height: 4px;
     border-radius: 2px;
@@ -153,7 +114,7 @@ img {
     margin-right: 10px;
     /* height: 16px;
     width: 21px; */
-    fill:var(--grey-text);
+    fill:$grey-text;
 }
 
 .phone-icon {
@@ -162,7 +123,7 @@ img {
     margin-right: 10px;
     /* height: 16px;
     width: 10px; */
-    fill:var(--grey-text);
+    fill:$grey-text;
     
 }
 
@@ -170,13 +131,13 @@ img {
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
-    color: var(--grey-text);
+    color: $grey-text;
     display: flex;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
-    transition: color var(--transition-time);
+    transition: color $transition-time;
 }
 
 .mail-icon,
@@ -186,7 +147,7 @@ img {
 
 .link-hd-adr:hover,
 .link-hd-adr:focus {
-    color: var(--blue);
+    color: $blue-color;
 }
 
 /* L O G O */
@@ -194,7 +155,7 @@ img {
 .logo {
     margin-top:24px;
     margin-bottom:23px;
-    color: var(--black-text);
+    color: $black-text;
     font-size: 26px;
     line-height: 31px;
     font-family: 'Raleway', sans-serif;
@@ -203,7 +164,7 @@ img {
 
 .web {
    /* font-family: 'Oleo Script', cursive; */
-   color: var(--blue);
+   color: $blue-color;
    font-size: 26px;
    line-height: 31px;
    font-family: 'Raleway', sans-serif;
@@ -218,7 +179,7 @@ img {
     
 } 
 .hero {
-    background-color: var(--graphite-bg);
+    background-color: $graphite-bg;
     max-width: 1600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/bg-img.png);
     background-size: cover;
@@ -227,12 +188,12 @@ img {
     margin-right: auto; 
     margin-left: auto;
 }
-.hero-title {
+.hero__title {
     margin-left: 252px;
     margin-right: 252px;
     margin-top: 200px;
     margin-bottom: 30px;
-    color: var(--white);
+    color: $white-color;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -240,15 +201,15 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-.hero-btn {
+.hero__btn {
     margin-left: 468px;
     margin-right: 468px;
     padding: 10px 32px;
-    background-color: var(--blue);
+    background-color: $blue-color;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    color: var(--white);
+    color: $white-color;
     text-align: center;
     letter-spacing: 0.06em;
     border:none;
@@ -318,7 +279,7 @@ img {
 }
 
 .title-features {
-    color: var(--dark-graphite-text);
+    color: $dark-graphite-text;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -327,7 +288,7 @@ img {
 }
 
 .features-p {
-    color: var(--grey-text);
+    color: $grey-text;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -345,7 +306,7 @@ img {
 
 .about-icons-thumb {
     display: flex;
-    background: var(--light-grey-bg-team);
+    background: $light-grey-bg-team;
     border-radius: 4px;
     justify-content: center;
     align-items: center;
@@ -391,7 +352,7 @@ img {
 }
 
 .worker-names {
-    background-color: var(--white);
+    background-color: $white-color;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
@@ -406,11 +367,11 @@ img {
 }
 
 .team {
-    background: var(--light-grey-bg-team)
+    background: $light-grey-bg-team
 }
 
 .name {
-    color: var(--dark-graphite-text);
+    color: $dark-graphite-text;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -418,7 +379,7 @@ img {
 }
 
 .work-position {
-    color: var(--grey-text);
+    color: $grey-text;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -438,10 +399,10 @@ img {
     margin-top:16px;
     width: 44px;
     height: 44px;
-    color: var(--light-grey-icons);
+    color: $light-grey-icons;
     border-radius: 50%;
 
-    transition: color var(--transition-time); 
+    transition: color $transition-time; 
 }
 
 .social-netw-icon {
@@ -451,9 +412,9 @@ img {
 
   .social-links:hover,
   .social-links:focus {
-    color:var(--white);
-    background-color: var(--blue);
-    border: 1px solid var(--blue);}
+    color:$white-color;
+    background-color: $blue-color;
+    border: 1px solid $blue-color;}
 
 .social-netw-container > li:nth-child(2n + 1) {
     margin-right: 10px;
@@ -471,7 +432,7 @@ img {
 /* ----------------------C L I E N T S---------------------- */
 
 .title-clients {
-    color: var(--dark-graphite-text);
+    color: $dark-graphite-text;
     padding-top:94px;
     margin-bottom: 50px;
     font-weight: 700;
@@ -497,7 +458,7 @@ img {
 .client-icon {
     align-items: center;
     justify-content: center;
-    fill:var(--light-grey-icons);
+    fill:$light-grey-icons;
 }
 
 .clients-icons > li:nth-child(2n + 1) {
@@ -514,7 +475,7 @@ img {
 
 .client-icon:hover,
 .client-icon:focus {
-    fill: var(--blue);
+    fill: $blue-color;
 }
 
 .clients-link {
@@ -524,10 +485,10 @@ img {
     width: 170px;
     height: 90px;
   
-    color: var(--light-grey-icons);
+    color: $light-grey-icons;
   
     border-radius: 4px;
-    border: 1px solid var(--light-grey-icons);
+    border: 1px solid $light-grey-icons;
 }
   
 .client-icon {
@@ -536,8 +497,8 @@ img {
   
 .clients-link:hover,
 .clients-link:focus {
-    color:var(--blue);
-    border: 1px solid var(--blue);
+    color:$blue-color;
+    border: 1px solid $blue-color;
 }
 
 /* ----------------------F O O T E R---------------------- */
@@ -551,12 +512,12 @@ img {
 }
 
 footer {
-    background-color: var(--graphite-bg);
+    background-color: $graphite-bg;
 }
 
 .logo-foot {
     /* display: block; */
-    color: var(--white);
+    color: $white-color;
     font-size: 26px;
     line-height: 31px;
     font-family: 'Raleway', sans-serif;
@@ -577,7 +538,7 @@ footer {
 }
 
 .link-foot-adr {
-    color:var(--white);
+    color:$white-color;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -585,7 +546,7 @@ footer {
 }
 
 .link-foot {
-    color: var(--white-text-op60);
+    color: $white-text-op60;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -599,7 +560,7 @@ footer {
 .footer-links p {
     align-items: baseline;
     margin-bottom: 20px;
-    color:var(--white);
+    color:$white-color;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -614,13 +575,13 @@ footer {
 }
 
 .foot-social-links {
-    background-color: var(--white-text-op10);
+    background-color: $white-text-op10;
     display:flex;
     justify-content: center;
     align-items: center;
     width: 44px;
     height: 44px;
-    color: var(--white);
+    color: $white-color;
     border-radius: 50%;
 }
 
@@ -638,8 +599,8 @@ footer {
 
 .foot-social-links:hover,
   .social-links:focus {
-    color:var(--white);
-    background-color: var(--blue);
+    color:$white-color;
+    background-color: $blue-color;
 }
  
 
@@ -679,9 +640,9 @@ footer {
 }
 
 .portfolio-btn {
-    background-color: var(--light-grey-bg-team);
+    background-color: $light-grey-bg-team;
     padding: 6px 22px;
-    color: var(--dark-graphite-text);
+    color: $dark-graphite-text;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -693,8 +654,8 @@ footer {
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-    background-color: var(--blue);
-    color: var(--white);
+    background-color: $blue-color;
+    color: $white-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -712,9 +673,9 @@ footer {
 }
 
 .portfolio-cards-stack {
-    background-color: var(--white);
-    outline: 1px solid var(--light-grey-stroke);
-    /* border: 1 px solid var(--light-grey-stroke); */
+    background-color: $white-color;
+    outline: 1px solid $light-grey-stroke;
+    /* border: 1 px solid $light-grey-stroke; */
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
@@ -725,7 +686,7 @@ footer {
 }
 
 .project-names h3 {
-    color:var(--dark-graphite-text);
+    color:$dark-graphite-text;
     margin-top: 20px;
     margin-bottom: 4px;
     margin-left: 24px;
@@ -737,7 +698,7 @@ footer {
 }
 
 .project-names p {
-    color: var(--grey-text);
+    color: $grey-text;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
@@ -769,8 +730,8 @@ footer {
     margin-left: 30px;
     margin-top: 30px;
 
-    background: var(--main-bg-color);
-    border: 1px solid var(--border-color-frame);
+    background: $main-bg-color;
+    border: 1px solid $border-color-frame;
     box-sizing: border-box;
     display: flex;
 } */
@@ -791,7 +752,7 @@ footer {
 }
 
 .images-title-name {
-    color:var(--white);
+    color:$white-color;
     display: flex;
     font-weight: 700;
     font-size: 14px;
@@ -828,7 +789,7 @@ position: relative;
     height:294px;
     width: 100%;
     top:0;
-    background-color:var(--blue);
+    background-color:$blue-color;
     opacity: 0;
    
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -841,12 +802,12 @@ position: relative;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:var(--blue);
+    background-color:$blue-color;
     opacity: 0;
     padding: 63px 24px;    
 
     transform: translateY(100%);
-    transition: transform var(--transition-time), opacity var(--transition-time);
+    transition: transform $transition-time, opacity $transition-time;
 }
 
 .pf-card-image {
@@ -864,7 +825,7 @@ position: relative;
 }
 
 .projects-overlay p {
-    color: var(--white);
+    color: $white-color;
     position:absolute;
     display: flex;
     font-weight: 400;
@@ -892,11 +853,11 @@ position: relative;
     height:100%;
     /* display:flex;
     align-items: center; */
-    background-color:var(--white-text-op60);
+    background-color:$white-text-op60;
     position:fixed;
     top:0;
     left: 0; 
-    transition: opacity var(--transition-time);
+    transition: opacity $transition-time;
 }
 
 .modal {
@@ -907,7 +868,7 @@ position: relative;
     transform: translateX(-50%) translateY(-50%);
     width:528px;
     height:581px;
-    background-color: white; 
+    background-color: $white-color; 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px; 
 }
@@ -919,8 +880,8 @@ position: relative;
     width:30px;
     height:30px;
     cursor:pointer;
-    fill: var(--dark-graphite-text);
-    border: 1px solid var(--light-grey-icons);
+    fill: $dark-graphite-text;
+    border: 1px solid $light-grey-icons;
     border-radius: 50%;
     outline:transparent;
     padding:none;
@@ -929,19 +890,19 @@ position: relative;
     align-items: center;
     background: transparent;
     
-    transition: fill var(--transition-time);
+    transition: fill $transition-time;
 }
 
 .backdrop-modal-btn:hover,
 .backdrop-modal-btn:focus {
-    fill:var(--blue);
+    fill:$blue-color;
 }
 /* 
 .svg-modal-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--blue);
+    border: 1px solid $blue-color;
     fill:transparent;
     
 } */
@@ -954,7 +915,7 @@ pointer-events:none;
 .modal p {
     margin-top:40px;
     margin-bottom:12px;
-    color:var(--dark-graphite-text);
+    color:$dark-graphite-text;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
@@ -980,7 +941,7 @@ form label {
 .label-input-block {
     
     margin-bottom:10px;
-    color: var(--grey-text);
+    color: $grey-text;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -989,16 +950,16 @@ form label {
 }
 
 .form button {
-    background-color: var(--blue);
+    background-color: $blue-color;
     width:200px;
     height:50px;
     margin-bottom:40px;
     margin:auto;
-    background-color: var(--blue);
+    background-color: $blue-color;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    color: var(--white);
+    color: $white-color;
     text-align: center;
     letter-spacing: 0.06em;
     border:none;
@@ -1015,7 +976,7 @@ form label {
     display:flex;
     align-items: center;
     justify-content: center;
-    color:var(--grey-text);
+    color:$grey-text;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -1027,7 +988,7 @@ form label {
     appearance: none;
     width:16px;
     height:15px;
-    border: 2px solid var(--graphite-bg);
+    border: 2px solid $graphite-bg;
     border-radius: 4px;
     outline:transparent;
     display:inline-block;
@@ -1052,8 +1013,8 @@ form label {
 }
 
 .conditions a {
-    color:var(--blue);
-    border-bottom: 0.75px solid var(--blue);
+    color:$blue-color;
+    border-bottom: 0.75px solid $blue-color;
 }
 
 .label-input-block input{
@@ -1066,16 +1027,15 @@ form label {
     display:flex;
     align-items: center;
     justify-content: center;
-    color:var(--grey-text);
+    color:$grey-text;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    border:1px solid var(--light-grey-icons);
+    border:1px solid $light-grey-icons;
     border-radius: 4px;
 
-    transition: border var(--transition-time);
-    
+    transition: border $transition-time;
 }
 
 .input-field-box {
@@ -1087,21 +1047,21 @@ form label {
     position: absolute;
     top:14px;
     left:56px;
-    fill:var(--dark-graphite-text);
+    fill:$dark-graphite-text;
 
-    transition: fill var(--transition-time);
+    transition: fill $transition-time;
 }
 
 .label-input-block:focus .form-icon,
 .label-input-block:hover .form-icon,
 .label-input-block:active .form-icon {
-    fill:var(--blue);
+    fill:$blue-color;
 } 
 
 .label-input-block input:focus-within,
 .label-input-block input:hover,
 .label-input-block input:active {
-    border: 1px solid var(--blue);
+    border: 1px solid $blue-color;
     outline:transparent;
     
 }
@@ -1110,7 +1070,7 @@ form label {
     vertical-align:top;
     padding: 12px 16px;
     height:120px;
-    color:var(--grey-text);
+    color:$grey-text;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -1142,7 +1102,7 @@ form label {
 
 .footer-form-container p {
     margin-bottom: 20px;
-    color:var(--white);
+    color:$white-color;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -1156,7 +1116,7 @@ form label {
     margin-left: auto;
     margin-right: auto;
     padding:10px 28.5px;
-    background-color: var(--blue);
+    background-color: $blue-color;
     outline:transparent;
     border:none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1164,7 +1124,7 @@ form label {
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    color: var(--white);
+    color: $white-color;
     justify-content: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -1180,16 +1140,16 @@ form label {
     padding-top:15px;
     padding-bottom:15px;
     padding-left: 16px;
-    background-color: var(--graphite-bg);
+    background-color: $graphite-bg;
     width:358px;
     height:50px;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.03em;
-    color: var(--light-grey-stroke);
+    color: $light-grey-stroke;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid var(--grey-text);
+    border: 1px solid $grey-text;
     border-radius: 4px;
     outline:transparent;
 }
