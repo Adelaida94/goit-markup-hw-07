@@ -894,7 +894,7 @@ footer {
   background-color: #2F303A;
 }
 
-.logo-foot {
+.logo.dark {
   /* display: block; */
   color: #FFFFFF;
   font-size: 26px;
@@ -908,15 +908,11 @@ footer {
   margin-top: 20px;
 }
 
-.footer-address li:nth-child(1) {
+.footer-address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-address li:nth-child(2) {
-  margin-bottom: 9px;
-}
-
-.link-foot-adr {
+.footer-address__link.white {
   color: #FFFFFF;
   font-weight: 400;
   font-size: 14px;
@@ -924,7 +920,7 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.link-foot {
+.footer-address__link {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
@@ -936,7 +932,7 @@ footer {
   margin-left: 70px;
 }
 
-.footer-links p {
+.footer-links__title {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -950,23 +946,32 @@ footer {
   font-family: 'Roboto', sans-serif;
 }
 
-.footer-social-netw {
+.social-networks__item.footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  color: #AFB1B8;
+  border-radius: 50%;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.foot-social-links {
+.social-networks__link.footer {
   background-color: rgba(255, 255, 255, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -976,20 +981,8 @@ footer {
   border-radius: 50%;
 }
 
-.footer-social-netw > li:nth-child(2n + 1) {
-  margin-right: 10px;
-}
-
-.footer-social-netw > li:nth-child(2n + 2) {
-  margin-right: 10px;
-}
-
-.footer-social-netw > li:nth-child(3) {
-  margin-right: 10px;
-}
-
-.foot-social-links:hover,
-.social-networks__link:focus {
+.social-networks__link.footer:hover,
+.social-networks__link.footer:focus {
   color: #FFFFFF;
   background-color: #2196F3;
 }
