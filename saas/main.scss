@@ -190,7 +190,7 @@
     cursor:pointer;
 }
 
-/* ----------------------A B O U T---------------------- */
+/* ----------------------A B O U T p 1 ---------------------- */
 
 .about .container {
     /* display: flex; */
@@ -207,30 +207,60 @@
     background: transparent;
 }
 
-.features li {
+.features__title {
+    margin-bottom: 10px;
+    color: $dark-graphite-text;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.features__article {
+    color: $grey-text;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    margin-bottom:94px;
+}
+
+.features__icon {
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    
+}
+
+.features-thumb {
+    display: flex;
+    background: $light-grey-bg-team;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+}
+
+.features__item {
     width: 270px;
     height: 101px;
 }
 
-.features li:nth-child(1) {
+.features__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.features li:nth-child(2) {
-    margin-right: 30px;
-}
-
-.features li:nth-child(3) {
-    margin-right: 30px;
-}
+/* ----------------------A B O U T p 2 ---------------------- */
 
 .about h2 {
     margin-bottom: 50px; 
 }
 
-.about h3 {
-    margin-bottom: 10px;
-}
+
 .about-pictures {
     margin-top: 94px;
     padding-bottom: 94px; 
@@ -251,42 +281,7 @@
     margin-right:30px;
 }
 
-.title-features {
-    color: $dark-graphite-text;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
 
-.features-p {
-    color: $grey-text;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    margin-bottom:94px;
-}
-
-.about-icons {
-    align-items: center;
-    justify-content: center;
-    height: 70px;
-    width: 70px;
-    
-}
-
-.about-icons-thumb {
-    display: flex;
-    background: $light-grey-bg-team;
-    border-radius: 4px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-}
 
 /* ----------------------T E A M---------------------- */
 
