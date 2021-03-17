@@ -680,8 +680,14 @@ img {
   padding-bottom: 94px;
 }
 
-.team h2 {
+.team__title {
   margin-bottom: 94px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .workers-set {
@@ -789,7 +795,7 @@ img {
 }
 
 /* ----------------------C L I E N T S---------------------- */
-.title-clients {
+.clients__title {
   color: #212121;
   padding-top: 94px;
   margin-bottom: 50px;
@@ -806,7 +812,7 @@ img {
           align-items: center;
 }
 
-.clients-icons {
+.clients-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -823,7 +829,7 @@ img {
   margin-top: -30px;
 }
 
-.client-icon {
+.clients-list__icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -833,24 +839,16 @@ img {
   fill: #AFB1B8;
 }
 
-.clients-icons > li:nth-child(2n + 1) {
+.clients-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-icons > li:nth-child(2n + 2) {
-  margin-right: 30px;
-}
-
-.clients-icons > li:nth-child(3) {
-  margin-right: 30px;
-}
-
-.client-icon:hover,
-.client-icon:focus {
+.clients-list__icon:hover,
+.clients-list__icon:focus {
   fill: #2196F3;
 }
 
-.clients-link {
+.clients-list__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -867,12 +865,12 @@ img {
   border: 1px solid #AFB1B8;
 }
 
-.client-icon {
+.clients-list__icon {
   fill: currentColor;
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
   color: #2196F3;
   border: 1px solid #2196F3;
 }

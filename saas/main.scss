@@ -337,8 +337,14 @@
     padding-bottom: 94px;
 }
 
-.team h2 {
+.team__title {
     margin-bottom:94px;
+    color: $dark-graphite-text;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .workers-set {
@@ -419,7 +425,6 @@
     fill:currentColor;  
 }
 
-
   .social-networks__link:hover,
   .social-networks__link:focus {
     color:$white-color;
@@ -433,7 +438,7 @@
 
 /* ----------------------C L I E N T S---------------------- */
 
-.title-clients {
+.clients__title {
     color: $dark-graphite-text;
     padding-top:94px;
     margin-bottom: 50px;
@@ -447,7 +452,7 @@
 .clients .container {
     align-items: center;
 }
-.clients-icons {
+.clients-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -457,30 +462,22 @@
     margin-top: -30px;
   }
 
-.client-icon {
+.clients-list__icon {
     align-items: center;
     justify-content: center;
     fill:$light-grey-icons;
 }
 
-.clients-icons > li:nth-child(2n + 1) {
+.clients-list__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.clients-icons > li:nth-child(2n + 2) {
-    margin-right: 30px;
-}
-
-.clients-icons > li:nth-child(3) {
-    margin-right: 30px;
-}
-
-.client-icon:hover,
-.client-icon:focus {
+.clients-list__icon:hover,
+.clients-list__icon:focus {
     fill: $blue-color;
 }
 
-.clients-link {
+.clients-list__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -493,12 +490,12 @@
     border: 1px solid $light-grey-icons;
 }
   
-.client-icon {
+.clients-list__icon {
     fill: currentColor;
 }
   
-.clients-link:hover,
-.clients-link:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
     color:$blue-color;
     border: 1px solid $blue-color;
 }
