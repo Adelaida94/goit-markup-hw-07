@@ -18,32 +18,32 @@ font-family: 'Roboto', sans-serif; -->
 
     <header class="header">
         <div class="container header__container">
-            <a class="header-logo" href=""><span class="web">Web</span>Studio</a>
-            <nav class="header-nav">
+            <a class="header__logo" href=""><span class="web">Web</span>Studio</a>
+            <nav class="header__nav">
                 <ul class="nav-list">
-                    <li class="nav-list__item"><a class="nav-list__link current" href="index.html">Студия</a></li>
+                    <li class="nav-list__item"><a class="nav-list__link nav-list__link current" href="index.html">Студия</a></li>
                     <li class="nav-list__item"><a class="nav-list__link" href="portfolio.html">Портфолио</a></li>
                     <li class="nav-list__item"><a class="nav-list__link" href="">Контакты</a></li>
                 </ul>
             </nav>
-
-           <ul class="header-address">
-                <li class="header-address__item">
-                    <a class="header-address__link" href="mailto:info@devstudio.com" >
-                    <svg width="21" height="16" class="header-address__icon">
-                        <use href="./images/icons/symbol-defs.svg#icon-mail"></use>
-                    </svg>
-                    info@devstudio.com</a>
-                </li>
-                <li class="header-address__item">
-                    <a class="header-address__link" href="tel:+380961111111">
-                    <svg width="10" height="16" class="header-address__icon">
-                        <use href="./images/icons/symbol-defs.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11</a>
-                </li>
-           </ul>
-           
+            <div class="header__contacts">
+                <ul class="contacts-list">
+                    <li class="contacts-list__item">
+                        <a class="contacts-list__link" href="mailto:info@devstudio.com" >
+                        <svg width="21" height="16" class="contacts-list__icon">
+                            <use href="./images/icons/symbol-defs.svg#icon-mail"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                    </li>
+                    <li class="contacts-list__item">
+                        <a class="contacts-list__link" href="tel:+380961111111">
+                        <svg width="10" height="16" class="contacts-list__icon">
+                            <use href="./images/icons/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11</a>
+                    </li>
+                </ul>
+         </div>        
         </div>
     </header>
 
@@ -395,7 +395,7 @@ font-family: 'Roboto', sans-serif; -->
                 </ul>
             </div>
             <div class="footer__block">
-                <p class="footer-form-title"> Подпишитесь на рассылку </p>
+                <p class="footer__title"> Подпишитесь на рассылку </p>
                 <form class="footer-form">
                     <div class="footer-form__block">
                         <input class="footer-form__input" type="mail" name="mail" id="mail-footer" placeholder="Email"> 
@@ -421,7 +421,7 @@ font-family: 'Roboto', sans-serif; -->
                 </svg>
             </button>
             
-            <p>Оставьте свои данные, мы вам перезвоним</p>
+            <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
             <form class="modal__form">
                <div class="modal__block">
                     <label class="modal__label" for="name">Имя</label>
@@ -457,10 +457,10 @@ font-family: 'Roboto', sans-serif; -->
                     <input class="modal__input" type="textarea" name="textarea" id="textarea" placeholder="Введите текст"> 
                 </div>
                 
-                <div class="checkbox">
+                <div class="checkbox-block">
                     
-                    <input class="checkbox__input" type="checkbox" name="conditions">  
-                    <label class="checkbox__label" for="checkbox">Соглашаюсь с рассылкой и принимаю <a class="checkbox__link" href="#">Условия договора</a></label>
+                    <input class="checkbox-block__input" type="checkbox" name="conditions">  
+                    <label class="checkbox-block__label" for="checkbox">Соглашаюсь с рассылкой и принимаю <a class="checkbox-block__link" href="#">Условия договора</a></label>
                 </div>
                 <button class="modal__submit" type="submit">Отправить</button>
             </form>

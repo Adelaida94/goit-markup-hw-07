@@ -18,9 +18,10 @@ header {
     border-bottom: 1px solid $light-grey-stroke;
 }
 
-.header-nav,
+.header__nav,
 .nav-list,
-.header-address {
+.header__contacts,
+.contacts-list {
     display: flex;
 }
 
